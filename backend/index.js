@@ -10,6 +10,17 @@ const postRoute=require('./routes/posts')  ;
 
 dotenv.config()  ;
 
+
+const cors=require("cors");
+
+app.use(cors()) 
+
+
+
+
+
+
+
 const Connection = async()=>{
     const URL="mongodb+srv://harry:harry1234@cluster0.jddpt.mongodb.net/social-media?retryWrites=true&w=majority"
       try{ 
